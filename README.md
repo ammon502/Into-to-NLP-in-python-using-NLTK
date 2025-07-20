@@ -1,7 +1,3 @@
 # Into-to-NLP-in-python-using-NLTK
 this is a test
-import nltk
-from nltk.book import *
-
-# Create a dispersion plot to visualize where key terms appear in the text
-text1.dispersion_plot(["whale", "Ahab", "ship", "sea", "death"])
+![plot](https://github.com/ammon502/Into-to-NLP-in-python-using-NLTK/blob/main/import%20nltk.png)
