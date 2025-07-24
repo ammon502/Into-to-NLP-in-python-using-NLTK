@@ -26,11 +26,15 @@ text1.similar("monstrous")
 This gives you words that appear in similar contexts to monstrous — a simple but powerful way to start exploring word similarity and usage.
 
 You can also see how often each word appears using a frequency distribution:
+
 from nltk import FreqDist
+
 fdist1 = FreqDist(text1)
+
 fdist1.most_common(10)
 
-![plot](https://github.com/ammon502/Into-to-NLP-in-python-using-NLTK/blob/main/fdist1.png)
+![plot](https://github.com/ammon502/Into-to-NLP-in-python-using-NLTK/blob/main/fdist1.png)'
+
 This shows the 10 most common words in Moby Dick. Spoiler alert: it’s mostly stuff like the, and, of — very common English words.
 If you want to filter these out (called stop words), we can explore that in a future post.
 
@@ -50,11 +54,14 @@ You’ve already seen that text1 looks like a list of words. But we can also tok
 from nltk.tokenize import word_tokenize, sent_tokenize
 
 sample_text = "Hello there! How are you doing today? This is a test."
+
 word_tokenize(sample_text)
+
 sent_tokenize(sample_text)
 
 
 word_tokenize() breaks text into words and punctuation.
+
 sent_tokenize() breaks it into full sentences.
 
 ![Word Tokenize](https://github.com/ammon502/Into-to-NLP-in-python-using-NLTK/blob/main/word%20tokenize.png)
@@ -63,6 +70,7 @@ sent_tokenize() breaks it into full sentences.
 This is useful because sometimes we’re not working with a nice pre-processed book like in nltk.book, but instead with our own custom text files or some of our own raw scraped data from the web, any raw text will do. Let’s say you want to analyze your own file. First, load it like this:
 
 with open("my_text.txt") as f:
+    
     raw = f.read()
 
 Then tokenize it:
